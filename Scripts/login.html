@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <style>
+    /* CSS styles go here */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Add your existing CSS styles here */
+    /* ... */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #65cdd2;
+    }
+
+    .login_container {
+      width: 320px;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login_container h2 {
+      font-size: 22px;
+      color: #0b0217;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input_box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input_box input {
+      width: 100%;
+      height: 40px;
+      padding: 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .input_box i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      color: #707070;
+    }
+
+    .option_field {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .checkbox {
+      display: flex;
+      column-gap: 8px;
+      white-space: nowrap;
+    }
+
+    .checkbox input {
+      accent-color: #7d2ae8;
+    }
+
+    .checkbox label {
+      font-size: 12px;
+      cursor: pointer;
+      user-select: none;
+      color: #0b0217;
+    }
+
+    .forgot_pw {
+      font-size: 12px;
+      color: #7d2ae8;
+      cursor: pointer;
+    }
+
+    .button {
+      background: #7d2ae8;
+      margin-top: 30px;
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #5c1a9c;
+    }
+
+    .login_signup {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login_signup a {
+      color: #7d2ae8;
+      text-decoration: none;
+    }
+
+    .login_signup a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login_container">
+    <h2>Login</h2>
+    <form action="#">
+      <div class="input_box">
+        <input type="email" placeholder="      Enter your email" required />
+        <i class="uil uil-envelope-alt"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="      Enter your password" required />
+        <i class="uil uil-lock"></i>
+      </div>
+      <div class="option_field">
+        <span class="checkbox">
+          <input type="checkbox" id="check" />
+          <label for="check">Remember me</label>
+        </span>
+        <a href="#" class="forgot_pw">Forgot password?</a>
+      </div>
+      <button type="submit" class="button">Login</button>
+      <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+    </form>
+  </div>
+</body>
+</html>

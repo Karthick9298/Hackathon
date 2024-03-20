@@ -1,0 +1,107 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7EEDD;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,p{
+    color: black;
+}
+header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 1
+    0px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.login-signup {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+/* logo image */
+#logoImg{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+/* feature 1 style*/
+.feature1{
+    border: 1px solid #000; /* This creates a border around the div */
+    padding: 20px; /* This adds some space between the border and the content */
+    width: 80%; /* This sets the width of the div. Adjust as needed. */
+    text-align: center; /* This centers the text inside the div */
+    margin: 0 auto; /* This centers the div itself */
+}
+
+.feature2 , .feature3, .feature4 {
+    border: 1px solid #000; /* This creates a border around the div */
+    padding: 20px; /* This adds some space between the border and the content */
+    width: 80%; /* This sets the width of the div. Adjust as needed. */
+    text-align: center; /* This centers the text inside the div */
+    margin: 50px auto; /* This centers the div itself */
+}
+
+
+.feature1:hover , .feature2:hover , .feature3:hover , .feature4:hover{
+    background-color: #8f9f6a;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
